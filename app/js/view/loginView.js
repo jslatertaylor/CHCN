@@ -4,11 +4,6 @@
 define(function (require) {
   var App = require('app');
   var template = require('text!../../html/loginView.html');
-  var PatientListView = require('view/patientListView');
-  var Patient = require('model/sampleModel');
-  var HeaderView = require('view/header');
-
-
 
   return Backbone.Marionette.ItemView.extend({
     id: 'loginView',
@@ -20,15 +15,8 @@ define(function (require) {
       'click #login': 'patientListView'
     },
 
-    patientListView: function () {
-      //App.headerRegion.destroy();
-      App.contentRegion.show(new PatientListView());
-      //App.views.header.changeHeader('Pending Requests');
-    },
-
     initialize: function () {
-      App.views.header = new HeaderView();
-      //this.model = new Patient();
+
     }
 
   });

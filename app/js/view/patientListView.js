@@ -7,8 +7,6 @@
 define(function (require) {
     var App = require('app');
     var template = require('text!../../html/patientListView.html');
-    var PatientView = require('view/patientView');
-    var Patient = require('model/sampleModel');
 
 
 
@@ -19,14 +17,10 @@ define(function (require) {
         template: _.template(template),
 
         events: {
-            'click #next': 'patientView'
-          },
-          patientView: function () {
-            App.contentRegion.show(new PatientView());
-            App.contentRegion.changeHeader('Patient Details');
+
           },
           initialize: function () {
-            this.model = new Patient();
+
           }
 
         });

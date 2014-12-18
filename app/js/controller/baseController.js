@@ -30,10 +30,12 @@ define(function (require) {
       App.contentRegion.show(new PatientListView());
     },
     showPatient: function () {
+        App.headerRegion.show(new EmptyHeaderView());
         App.contentRegion.show(new PatientView());
       },
     showNotes: function () {
-          App.contentRegion.show(new NotesView());
+        App.headerRegion.show(new EmptyHeaderView());
+        App.contentRegion.show(new NotesView());
         }
 
 

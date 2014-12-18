@@ -9,6 +9,7 @@ define(function (require) {
         routes: {
           '': 'showIndex',
           'about': 'showAbout',
+          'patientsList': 'showPatientList',
           'patientView': 'showPatient',
           'notesView': 'showNotes'
         }
