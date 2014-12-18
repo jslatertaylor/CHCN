@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="patient">
+    <img src="images/picture.png" align="left" alt="Patient Photo">
+  <p>
+    Age: <%=age%> <br />
+    Gender: <%=gender%>  <br />
+    DOB:  <%=dateOfBirth%><br />
+  </p>
+</div>
+<ul data-role="listview">
+    <li data-role="list-divider " class="nav"> Notes
+    </li>
+</ul>
+<form>
+  Comments:
+  <textarea name="comments" id="comments" class="notes">
+    K. Smith <14-Oct-2014 06:56:02>: No noticeable improvement.
+    M. Erwin <13-Oct-2014 13:30:19>: Medication administered. No apparent discomfort.
+    M. Erwin <13-Oct-2014 12:56:02>: Patient feeling tired and dizzy.
+  </textarea>
+
+</form>
+<div class="submit">
+    <a class="button" href="#notesView">submit</a>
+    <a class="button" href="#patientView">cancel</a>
+</div>
+
+</body>
+</html>
+
