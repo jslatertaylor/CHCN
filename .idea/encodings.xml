@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/css/demo.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/approveView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/clarifyView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/denyView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/emptyheaderView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/loginView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/partialView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/patientListView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/html/patientView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/controller/baseController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/approveView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/clarifyView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/denyView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/emptyheader.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/header.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/loginView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/partialView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/patientListView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/js/view/patientView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dist/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dist/js/view/emptyheader.js" charset="UTF-8" />
+  </component>
 </project>
 

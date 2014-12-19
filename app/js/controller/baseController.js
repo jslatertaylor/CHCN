@@ -1,12 +1,15 @@
 define(function (require) {
   var App = require('app');
-  var EmptyHeaderView = ('view/emptyheaderView');
+  var EmptyHeaderView = require('view/emptyheader');
   var HeaderView = require('view/header');
   var FooterView = require('view/footer');
   var PatientListView = require('view/patientListView');
   var PatientView = require('view/patientView');
-  var NotesView = require('view/notesView');
   var LoginView = require('view/loginView');
+  var ApproveView = require('view/approveView');
+  var DenyView = require('view/denyView');
+  var PartialView = require('view/partialView');
+  var ClarifyView = require('view/clarifyView');
 
 
   return Backbone.Marionette.Controller.extend({
@@ -15,6 +18,7 @@ define(function (require) {
       App.views = {};
       App.views.header = new HeaderView();
       App.views.footer = new FooterView();
+      App.views.emptyheader = new EmptyHeaderView();
       App.headerRegion.show(App.views.header);
       App.footerRegion.show(App.views.footer);
     },
@@ -26,18 +30,38 @@ define(function (require) {
 
     },
     showPatientList: function () {
-      App.headerRegion.show(new EmptyHeaderView());
+      App.headerRegion.show(new HeaderView());
       App.contentRegion.show(new PatientListView());
+      App.views.header.changeHeader('Pending Requests');
     },
     showPatient: function () {
-        App.headerRegion.show(new EmptyHeaderView());
-        App.contentRegion.show(new PatientView());
-      },
-    showNotes: function () {
-        App.headerRegion.show(new EmptyHeaderView());
-        App.contentRegion.show(new NotesView());
-        }
+      App.headerRegion.show(new HeaderView());
+      App.contentRegion.show(new PatientView());
+      App.views.header.changeHeader('Patient Details');
+
+    },
+    showApprove: function () {
+      App.headerRegion.show(new HeaderView());
+      App.contentRegion.show(new ApproveView());
+      App.views.header.changeHeader('Approve');
+    },
+    showDeny: function () {
+      App.headerRegion.show(new HeaderView());
+      App.contentRegion.show(new DenyView());
+      App.views.header.changeHeader('Deny');
+    },
+    showPartial: function () {
+      App.headerRegion.show(new HeaderView());
+      App.contentRegion.show(new PartialView());
+      App.views.header.changeHeader('Partial');
+    },
+    showClarify: function () {
+      App.headerRegion.show(new HeaderView());
+      App.contentRegion.show(new ClarifyView());
+      App.views.header.changeHeader('Clarify');
+    }
 
 
-  });
+
+    });
 });

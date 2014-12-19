@@ -5,9 +5,8 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container-fluid">
-  <div class="row">
+<div class="container-full">
+  <div class="row" id="patient-data">
     <div class="col-xs-12">
       <div class="title-bar">
         <h4>Member</h4>
@@ -54,101 +53,18 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="well text-center">
-      <button type="button" class="btn btn-fresh text-capitalize btn-sm" data-toggle="modal" data-target="#approveModal">Approve</button>
-      <button type="button" class="btn btn-hot text-capitalize btn-sm" data-toggle="modal" data-target="#denyModal">Deny</button>
-      <button type="button" class="btn btn-sunny text-capitalize btn-sm" data-toggle="modal" data-target="#partialModal">Partial</button>
-      <button type="button" class="btn btn-sky text-capitalize btn-sm" data-toggle="modal" data-target="#clarifyModal">Clarify</button>
-      <button class="btn btn-md">
-        <i class="fa fa-reply"></i><br>
-      </button>
-      <button class="btn btn-md">
-        <i class="fa fa-share"></i><br>
-      </button>
-    </div>
 
-  </div>
-
-  <!-- Approve Modal -->
-  <div class="modal fade" id="approveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">MD Notes</h4>
-        </div>
-        <div class="modal-body">
-
-          <textarea class="form-control" rows="3"></textarea>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sunny text-capitalize btn-sm" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-fresh text-capitalize btn-sm" data-dismiss="modal">Approve</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Deny Modal -->
-  <div class="modal fade" id="denyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">MD Notes</h4>
-        </div>
-        <div class="modal-body">
-
-          <textarea class="form-control" rows="3"></textarea>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sunny text-capitalize btn-sm" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-hot text-capitalize btn-sm" data-dismiss="modal">Deny</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Partial Modal -->
-  <div class="modal fade" id="partialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">MD Notes</h4>
-        </div>
-        <div class="modal-body">
-
-          <textarea class="form-control" rows="3"></textarea>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sunny text-capitalize btn-sm" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-hot text-capitalize btn-sm" data-dismiss="modal">Partial</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Clarify Modal -->
-  <div class="modal fade" id="clarifyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">MD Notes</h4>
-        </div>
-        <div class="modal-body">
-
-          <textarea class="form-control" rows="3"></textarea>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sunny text-capitalize btn-sm" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-hot text-capitalize btn-sm" data-dismiss="modal">Clarify</button>
-        </div>
-      </div>
-    </div>
+    <div class="well text-center" id="buttons">
+      <a href="#approveView"><i class="fa fa-check-circle fa-3x pull-left" id="spacing"></i></a>
+      <a href="#denyView"><i class="fa fa-times-circle fa-3x" id="spacing"></i></a>
+      <a href="#partialView"><i class="fa fa-star-half-o fa-3x" id="spacing"></i></a>
+      <a href="#clarifyView"><i class="fa fa-question fa-3x" id="spacing"></i></a>
+      <!--<button class="btn btn-md">-->
+        <!--<i class="fa fa-reply"></i><br>-->
+      <!--</button>-->
+      <!--<button class="btn btn-md">-->
+        <!--<i class="fa fa-share"></i><br>-->
+      <!--</button>-->
   </div>
 </div>
 </body>

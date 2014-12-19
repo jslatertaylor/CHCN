@@ -7,7 +7,7 @@ define(function (require) {
   return Backbone.Marionette.ItemView.extend({
     id: 'header',
     tagName: 'div',
-    className: '',
+    className: 'header-fixed',
     template: _.template(template),
 
     serializeData: function () {

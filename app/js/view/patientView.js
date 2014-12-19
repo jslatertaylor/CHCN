@@ -19,8 +19,7 @@ define(function (require) {
       'click': 'submit'
     },
     initialize: function () {
-      this.model = new Patient();
-      //App.views.header = new HeaderView();
+      //this.model = new Patient();
     },
     notesView: function () {
       App.contentRegion.show(new NotesView());

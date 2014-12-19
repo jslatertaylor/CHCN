@@ -10,11 +10,9 @@ define(function (require) {
     tagName: 'div',
     className: '',
     template: _.template(template),
-
-    events: {
-      'click #login': 'patientListView'
+    onLoad: function () {
+      $('#content').css('padding-top', '20');
     },
-
     initialize: function () {
 
     }

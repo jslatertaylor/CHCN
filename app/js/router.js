@@ -11,7 +11,11 @@ define(function (require) {
           'about': 'showAbout',
           'patientsList': 'showPatientList',
           'patientView': 'showPatient',
-          'notesView': 'showNotes'
+          'approveView': 'showApprove',
+          'denyView': 'showDeny',
+          'partialView': 'showPartial',
+          'clarifyView': 'showClarify'
+
         }
       }
     },
